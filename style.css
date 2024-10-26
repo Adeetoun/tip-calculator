@@ -180,7 +180,6 @@ button:focus{
         height: 100vh;
         margin-top: 15px;
         border-radius: 25px;
-        position: fixed;
     }
     .form-container form input{
         width: 80%;
