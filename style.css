@@ -184,6 +184,7 @@ button:focus{
     }
     .form-container form input{
         width: 80%;
+        box-sizing: border-box;
     }
     .grid{
         display: grid;
