@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <img src="images/logo.svg" alt="logo">
+    <div class="container">
+        <div class="form-container">
+        <form action="">
+            <label for="number">Bill</label>
+             <input type="number" class="dollar" placeholder="0">
+        </form>
+         <p>Select Tip %</p>
+         <div class="grid">
+            <button id="grid" value="5">5%</button>
+            <button id="grid" value="10">10%</button>
+            <button id="grid" value="15">15%</button>
+            <button id="grid" value="25">25%</button>
+            <button id="grid" value="50">50%</button>
+            <input type="number" placeholder="Custom" id="custom">
+         </div>
+         <form action="">
+            <label for="number" class="label">Number of People <span id="hidden">Don't be zero</span></label>
+             <input type="number" class="person" placeholder="0">
+        </form>
+        </div>
+        <div class="result-container">
+            <form>
+              <label for="number">TipAmount <span>/person</span></label>
+              <input type="number" placeholder="$0.00" id="amount">
+            </form>
+              <form id="label2">
+                <label>Total <span>/person</span></label>
+                <input type="number" placeholder=" $0.00" id="total">
+              </form>
+                <button id="btn">RESET</button>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+img{
+    margin-top: 80px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    height: 50vh;
+    background: hsl(0, 0%, 100%);
+    width: 100%;
+    max-width: 800px;
+    margin-top: 25px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+}
+.form-container form label{
+    color: hsl(186, 14%, 43%);
+}
+.form-container form input{
+    padding: 5px;
+    margin: 5px;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    border-radius: 3px;
+    width: 60%;
+}
+.form-container form .dollar{
+  background-image: url('images/icon-dollar.svg');
+  background-repeat: no-repeat;
+  background-size: 8px;
+  background-position: left center;
+  text-align: right;
+}
+.form-container form .dollar:focus{
+    outline: none;
+    border: 1px solid hsl(184, 14%, 56%);
+}
+.form-container form .label{
+   margin-top: 12px;
+}
+.form-container form .person{
+    background-image: url('images/icon-person.svg');
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position: left center;
+    text-align: right;
+}
+.form-container form .person:focus{
+    outline: none;
+    border: 1px solid hsl(184, 14%, 56%);
+}
+.label{
+    display: flex;
+    justify-content: space-between;
+}
+#hidden{
+    color: rgb(250, 116, 116);
+    margin-right: 45px;
+    display: none;
+}
+.grid{
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+button{
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.grid input{
+    border: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background: hsl(189, 41%, 97%);
+    color: hsl(186, 14%, 43%);
+    cursor: pointer;
+}
+.grid input:focus{
+    outline: none;
+    border: 1px solid hsl(184, 14%, 56%);
+    background: hsl(184, 14%, 56%);
+}
+button:focus{
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(186, 14%, 43%);
+}
+.result-container{
+    background: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    height: 40vh;
+    width: 50%
+}
+.result-container form{
+    display: flex;
+    justify-content: space-between;
+}
+.result-container form label{
+    display: flex;
+    flex-direction: column;
+    color:hsl(0, 0%, 100%);
+}
+.result-container form label span{
+    color: hsl(185, 41%, 84%);
+    font-size: 14px;
+}
+.result-container form input{
+    background: none;
+    padding: 10px;
+    border: none;
+    margin-top: 5px;
+    font-size: 24px;
+    width: 80%;
+    font-weight: 700;
+    text-align: right;
+}      
+.result-container form input:focus{
+    outline: none;
+    border: hsl(184, 14%, 56%);
+}
+.result-container form input::placeholder{
+    color: hsl(185, 41%, 84%);
+
+}
+.result-container form #label2{
+    margin-top: 18px;
+}
+#btn{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 38px;
+    background: hsl(184, 14%, 56%);
+    color: hsl(186, 14%, 43%);
+}
+#btn:focus{
+    background: hsl(185, 41%, 84%);
+    font-weight: 700;
+}
+
+@media(max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding: 20px;
+        margin: 20px;
+        height: 100vh;
+        margin-top: 15px;
+        border-radius: 25px;
+    }
+    .form-container form input{
+        width: 80%;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .result-container{
+        width: 100%;
+    }
+    #btn{
+        margin-top: 25px;
+        padding: 15px;
+    }
+}
